@@ -1,0 +1,1498 @@
+2025-04-17 23:38:32,303 - DEBUG - Test suite stderr:
+F.FFFFFFFEFFFEEFEFFF
+======================================================================
+ERROR: test_operators_divide_equal (tests.LexerTest.test_operators_divide_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 50, in test_operators_divide_equal
+    self._assert_tokens("test_operators_divide_equal.lmu", [Operator("/=")])
+                                                            ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '/=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_minus_equal (tests.LexerTest.test_operators_minus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 59, in test_operators_minus_equal
+    self._assert_tokens("test_operators_minus_equal.lmu", [Operator("-=")])
+                                                           ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '-=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_multiply_equal (tests.LexerTest.test_operators_multiply_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 62, in test_operators_multiply_equal
+    self._assert_tokens("test_operators_multiply_equal.lmu", [Operator("*=")])
+                                                              ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '*=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_plus_equal (tests.LexerTest.test_operators_plus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 68, in test_operators_plus_equal
+    self._assert_tokens("test_operators_plus_equal.lmu", [Operator("+=")])
+                                                          ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_comments (tests.LexerTest.test_comments)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 21, in test_comments
+    self._assert_tokens("test_comments.lmu", [])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 7 != 0 : Token count mismatch for test_comments.lmu
+
+======================================================================
+FAIL: test_example (tests.LexerTest.test_example)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 90, in test_example
+    self._assert_tokens("test_example.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 46 != 20 : Token count mismatch for test_example.lmu
+
+======================================================================
+FAIL: test_identifier (tests.LexerTest.test_identifier)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 25, in test_identifier
+    self._assert_tokens("test_identifier.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 1 != 4 : Token count mismatch for test_identifier.lmu
+
+======================================================================
+FAIL: test_keyword (tests.LexerTest.test_keyword)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 31, in test_keyword
+    self._assert_tokens("test_keyword.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 1 != 16 : Token count mismatch for test_keyword.lmu
+
+======================================================================
+FAIL: test_literal (tests.LexerTest.test_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 35, in test_literal
+    self._assert_tokens("test_literal.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 1 != 3 : Token count mismatch for test_literal.lmu
+
+======================================================================
+FAIL: test_multiple (tests.LexerTest.test_multiple)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 80, in test_multiple
+    self._assert_tokens("test_multiple.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 6 != 14 : Token count mismatch for test_multiple.lmu
+
+======================================================================
+FAIL: test_multiple_lines (tests.LexerTest.test_multiple_lines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 86, in test_multiple_lines
+    self._assert_tokens("test_multiple_lines.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 7 != 15 : Token count mismatch for test_multiple_lines.lmu
+
+======================================================================
+FAIL: test_operator (tests.LexerTest.test_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 44, in test_operator
+    self._assert_tokens("test_operator.lmu", [Operator(o) for o in ["=", "+", "-", "*", "/", "!"]])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 1 != 6 : Token count mismatch for test_operator.lmu
+
+======================================================================
+FAIL: test_operators_equal (tests.LexerTest.test_operators_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 47, in test_operators_equal
+    self._assert_tokens("test_operators_equal.lmu", [Operator("=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_equal.lmu
+
+======================================================================
+FAIL: test_operators_greater (tests.LexerTest.test_operators_greater)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 53, in test_operators_greater
+    self._assert_tokens("test_operators_greater.lmu", [Operator(">")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater.lmu
+
+======================================================================
+FAIL: test_operators_greater_equal (tests.LexerTest.test_operators_greater_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 56, in test_operators_greater_equal
+    self._assert_tokens("test_operators_greater_equal.lmu", [Operator(">=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater_equal.lmu
+
+======================================================================
+FAIL: test_operators_not_equal (tests.LexerTest.test_operators_not_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 65, in test_operators_not_equal
+    self._assert_tokens("test_operators_not_equal.lmu", [Operator("!=") ])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_not_equal.lmu
+
+======================================================================
+FAIL: test_operators_smaller (tests.LexerTest.test_operators_smaller)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 71, in test_operators_smaller
+    self._assert_tokens("test_operators_smaller.lmu", [Operator("<")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller.lmu
+
+======================================================================
+FAIL: test_operators_smaller_equal (tests.LexerTest.test_operators_smaller_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 74, in test_operators_smaller_equal
+    self._assert_tokens("test_operators_smaller_equal.lmu", [Operator("<=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller_equal.lmu
+
+======================================================================
+FAIL: test_separator (tests.LexerTest.test_separator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 40, in test_separator
+    self._assert_tokens("test_separator.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename}")
+AssertionError: 1 != 9 : Token count mismatch for test_separator.lmu
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.026s
+
+FAILED (failures=15, errors=4)
+
+2025-04-17 23:38:32,306 - INFO - Uploading test suite for analyse request...
+2025-04-17 23:38:33,641 - INFO - Upload of test suite for analyse request done!
+2025-04-17 23:38:33,641 - INFO - Sending test suite analyse request...
+2025-04-17 23:38:36,737 - INFO - Received response to test suite analyse request!
+2025-04-17 23:38:36,737 - DEBUG - Analyse Score: 30
+2025-04-17 23:38:36,738 - DEBUG - Analyse Feedback: The test suite has several issues. Firstly, the `Operator` enum in `tokens.py` does not include operators like '/=', '-=', '*=', and '+='. This causes `ValueError` exceptions in the tests that use them. Secondly, most tests fail because the number of tokens found by the lexer does not match the expected number of tokens. The expected tokens in the tests like `test_comments`, `test_identifier`, `test_keyword`, `test_literal`, `test_multiple`, `test_multiple_lines`, `test_operator`, `test_operators_equal`, `test_operators_greater`, `test_operators_greater_equal`, `test_operators_not_equal`, `test_operators_smaller`, `test_operators_smaller_equal`, `test_separator` and `test_example` do not match what the Lexer produces from the input files. Additionally the list OPERATORS in the tokens.py only contains the first character of the operator to check for the operator type. Therefore a better test suite is needed.
+2025-04-17 23:38:37,651 - INFO - +++ START OF ITERATION: 1 +++
+2025-04-17 23:38:37,652 - INFO - Sending feedback for generation of new test suite...
+2025-04-17 23:38:44,217 - INFO - Received updated test suite!
+2025-04-17 23:38:44,220 - DEBUG - Saving suite to logs/suites/2025-04-17/tests_23_38_44.py
+2025-04-17 23:38:44,220 - INFO - Starting execution of the generated test suite...
+2025-04-17 23:38:44,867 - INFO - Execution of the generated test suite done!
+2025-04-17 23:38:44,867 - DEBUG - Test suite stdout:
+
+2025-04-17 23:38:44,867 - DEBUG - Test suite stderr:
+F.FFFFFFFEFFFEEFEFFF
+======================================================================
+ERROR: test_operators_divide_equal (tests.LexerTest.test_operators_divide_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 50, in test_operators_divide_equal
+    self._assert_tokens("test_operators_divide_equal.lmu", [Operator("/=")])
+                                                            ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '/=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_minus_equal (tests.LexerTest.test_operators_minus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 59, in test_operators_minus_equal
+    self._assert_tokens("test_operators_minus_equal.lmu", [Operator("-=")])
+                                                           ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '-=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_multiply_equal (tests.LexerTest.test_operators_multiply_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 62, in test_operators_multiply_equal
+    self._assert_tokens("test_operators_multiply_equal.lmu", [Operator("*=")])
+                                                              ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '*=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_plus_equal (tests.LexerTest.test_operators_plus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 68, in test_operators_plus_equal
+    self._assert_tokens("test_operators_plus_equal.lmu", [Operator("+=")])
+                                                          ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_comments (tests.LexerTest.test_comments)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 22, in test_comments
+    self._assert_tokens("test_comments.lmu", [])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 7 != 0 : Token count mismatch for test_comments.lmu - Actual: [Identifier(value='variable1'), <Operator.EQUAL: '='>, Literal(value=123), Identifier(value='variable2'), <Operator.EQUAL: '='>, Literal(value=456), <Separator.SEMICOLON: ';'>], Expected: []
+
+======================================================================
+FAIL: test_example (tests.LexerTest.test_example)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 90, in test_example
+    self._assert_tokens("test_example.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 46 != 20 : Token count mismatch for test_example.lmu - Actual: [<Keyword.CLASS: 'class'>, Identifier(value='Person'), <Separator.L_CURLY: '{'>, <Keyword.INST: 'inst'>, <Keyword.INT: 'int'>, Identifier(value='age'), <Operator.EQUAL: '='>, Literal(value=20), <Separator.SEMICOLON: ';'>, <Keyword.METHOD: 'method'>, <Keyword.INT: 'int'>, Identifier(value='get_age'), <Separator.L_ROUND: '('>, <Separator.R_ROUND: ')'>, <Separator.L_CURLY: '{'>, <Keyword.RETURN: 'return'>, <Keyword.THIS: 'this'>, <Separator.DOT: '.'>, Identifier(value='age'), <Separator.SEMICOLON: ';'>, <Separator.R_CURLY: '}'>, <Separator.R_CURLY: '}'>, <Keyword.FUNC: 'function'>, Identifier(value='main'), <Separator.L_ROUND: '('>, <Separator.R_ROUND: ')'>, <Separator.L_CURLY: '{'>, <Keyword.INST: 'inst'>, Identifier(value='Person'), Identifier(value='p'), <Operator.EQUAL: '='>, Identifier(value='new'), Identifier(value='Person'), <Separator.L_ROUND: '('>, <Separator.R_ROUND: ')'>, <Separator.SEMICOLON: ';'>, <Keyword.PRINT: 'print'>, <Separator.L_ROUND: '('>, Identifier(value='p'), <Separator.DOT: '.'>, Identifier(value='get_age'), <Separator.L_ROUND: '('>, <Separator.R_ROUND: ')'>, <Separator.R_ROUND: ')'>, <Separator.SEMICOLON: ';'>, <Separator.R_CURLY: '}'>], Expected: [<Keyword.INT: 'int'>, Identifier(value='x'), <Separator.SEMICOLON: ';'>, Identifier(value='x'), <Operator.EQUAL: '='>, Literal(value=10), <Separator.SEMICOLON: ';'>, <Keyword.INT: 'int'>, Identifier(value='y'), <Separator.SEMICOLON: ';'>, Identifier(value='y'), <Operator.EQUAL: '='>, Literal(value=20), <Separator.SEMICOLON: ';'>, Identifier(value='result'), <Operator.EQUAL: '='>, Identifier(value='x'), <Operator.PLUS: '+'>, Identifier(value='y'), <Separator.SEMICOLON: ';'>]
+
+======================================================================
+FAIL: test_identifier (tests.LexerTest.test_identifier)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 26, in test_identifier
+    self._assert_tokens("test_identifier.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 1 != 4 : Token count mismatch for test_identifier.lmu - Actual: [Identifier(value='variable')], Expected: [Identifier(value='test'), Identifier(value='test_identifier'), Identifier(value='testIdentifier'), Identifier(value='test123')]
+
+======================================================================
+FAIL: test_keyword (tests.LexerTest.test_keyword)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 32, in test_keyword
+    self._assert_tokens("test_keyword.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 1 != 16 : Token count mismatch for test_keyword.lmu - Actual: [<Keyword.CLASS: 'class'>], Expected: [<Keyword.CLASS: 'class'>, <Keyword.THIS: 'this'>, <Keyword.INT: 'int'>, <Keyword.INST: 'inst'>, <Keyword.FUNC: 'function'>, <Keyword.METHOD: 'method'>, <Keyword.RETURN: 'return'>, <Keyword.IF: 'if'>, <Keyword.THEN: 'then'>, <Keyword.ELSE: 'else'>, <Keyword.FOR: 'for'>, <Keyword.IN: 'in'>, <Keyword.WHILE: 'while'>, <Keyword.DO: 'do'>, <Keyword.PRINT: 'print'>, <Keyword.INPUT: 'input'>]
+
+======================================================================
+FAIL: test_literal (tests.LexerTest.test_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 36, in test_literal
+    self._assert_tokens("test_literal.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 1 != 3 : Token count mismatch for test_literal.lmu - Actual: [Literal(value=123)], Expected: [Literal(value=123), Literal(value=0), Literal(value=99999)]
+
+======================================================================
+FAIL: test_multiple (tests.LexerTest.test_multiple)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 80, in test_multiple
+    self._assert_tokens("test_multiple.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 6 != 14 : Token count mismatch for test_multiple.lmu - Actual: [Identifier(value='variable1'), <Operator.EQUAL: '='>, Literal(value=123), <Operator.PLUS: '+'>, Identifier(value='variable2'), <Separator.SEMICOLON: ';'>], Expected: [Identifier(value='x'), <Operator.EQUAL: '='>, Literal(value=10), <Separator.SEMICOLON: ';'>, Identifier(value='y'), <Operator.EQUAL: '='>, Literal(value=20), <Separator.SEMICOLON: ';'>, Identifier(value='result'), <Operator.EQUAL: '='>, Identifier(value='x'), <Operator.PLUS: '+'>, Identifier(value='y'), <Separator.SEMICOLON: ';'>]
+
+======================================================================
+FAIL: test_multiple_lines (tests.LexerTest.test_multiple_lines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 86, in test_multiple_lines
+    self._assert_tokens("test_multiple_lines.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 7 != 15 : Token count mismatch for test_multiple_lines.lmu - Actual: [Identifier(value='variable1'), <Operator.EQUAL: '='>, Literal(value=123), Identifier(value='variable2'), <Operator.EQUAL: '='>, Literal(value=456), <Separator.SEMICOLON: ';'>], Expected: [<Keyword.INT: 'int'>, Identifier(value='x'), <Separator.SEMICOLON: ';'>, Identifier(value='x'), <Operator.EQUAL: '='>, Literal(value=5), <Separator.SEMICOLON: ';'>, <Keyword.IF: 'if'>, Identifier(value='x'), <Operator.GREATER: '>'>, Literal(value=0), <Keyword.THEN: 'then'>, <Keyword.PRINT: 'print'>, Identifier(value='x'), <Separator.SEMICOLON: ';'>]
+
+======================================================================
+FAIL: test_operator (tests.LexerTest.test_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 44, in test_operator
+    self._assert_tokens("test_operator.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 1 != 6 : Token count mismatch for test_operator.lmu - Actual: [<Operator.PLUS: '+'>], Expected: [<Operator.EQUAL: '='>, <Operator.PLUS: '+'>, <Operator.MINUS: '-'>, <Operator.MULTIPLY: '*'>, <Operator.DIVIDE: '/'>, <Operator.NOT: '!'>]
+
+======================================================================
+FAIL: test_operators_equal (tests.LexerTest.test_operators_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 47, in test_operators_equal
+    self._assert_tokens("test_operators_equal.lmu", [Operator("=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_equal.lmu - Actual: [Identifier(value='x'), <Operator.EQUALS: '=='>, Literal(value=1)], Expected: [<Operator.EQUAL: '='>]
+
+======================================================================
+FAIL: test_operators_greater (tests.LexerTest.test_operators_greater)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 53, in test_operators_greater
+    self._assert_tokens("test_operators_greater.lmu", [Operator(">")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater.lmu - Actual: [Identifier(value='x'), <Operator.GREATER: '>'>, Literal(value=1)], Expected: [<Operator.GREATER: '>'>]
+
+======================================================================
+FAIL: test_operators_greater_equal (tests.LexerTest.test_operators_greater_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 56, in test_operators_greater_equal
+    self._assert_tokens("test_operators_greater_equal.lmu", [Operator(">=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater_equal.lmu - Actual: [Identifier(value='x'), <Operator.GREATER_EQ: '>='>, Literal(value=1)], Expected: [<Operator.GREATER_EQ: '>='>]
+
+======================================================================
+FAIL: test_operators_not_equal (tests.LexerTest.test_operators_not_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 65, in test_operators_not_equal
+    self._assert_tokens("test_operators_not_equal.lmu", [Operator("!=") ])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_not_equal.lmu - Actual: [Identifier(value='x'), <Operator.NOT_EQUAL: '!='>, Literal(value=1)], Expected: [<Operator.NOT_EQUAL: '!='>]
+
+======================================================================
+FAIL: test_operators_smaller (tests.LexerTest.test_operators_smaller)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 71, in test_operators_smaller
+    self._assert_tokens("test_operators_smaller.lmu", [Operator("<")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller.lmu - Actual: [Identifier(value='x'), <Operator.SMALLER: '<'>, Literal(value=1)], Expected: [<Operator.SMALLER: '<'>]
+
+======================================================================
+FAIL: test_operators_smaller_equal (tests.LexerTest.test_operators_smaller_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 74, in test_operators_smaller_equal
+    self._assert_tokens("test_operators_smaller_equal.lmu", [Operator("<=")])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller_equal.lmu - Actual: [Identifier(value='x'), <Operator.SMALLER_EQ: '<='>, Literal(value=1)], Expected: [<Operator.SMALLER_EQ: '<='>]
+
+======================================================================
+FAIL: test_separator (tests.LexerTest.test_separator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 40, in test_separator
+    self._assert_tokens("test_separator.lmu", expected)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 13, in _assert_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {filename} - Actual: {tokens}, Expected: {expected_tokens}")
+AssertionError: 1 != 9 : Token count mismatch for test_separator.lmu - Actual: [<Separator.SEMICOLON: ';'>], Expected: [<Separator.DOT: '.'>, <Separator.COMMA: ','>, <Separator.SEMICOLON: ';'>, <Separator.L_ROUND: '('>, <Separator.R_ROUND: ')'>, <Separator.L_CURLY: '{'>, <Separator.R_CURLY: '}'>, <Separator.L_SQUARE: '['>, <Separator.R_SQUARE: ']'>]
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.025s
+
+FAILED (failures=15, errors=4)
+
+2025-04-17 23:38:44,868 - INFO - Uploading test suite for analyse request...
+2025-04-17 23:38:45,747 - INFO - Upload of test suite for analyse request done!
+2025-04-17 23:38:45,748 - INFO - Sending test suite analyse request...
+2025-04-17 23:38:46,230 - INFO - Starting deletion of uploaded project files (TS Evaluator)...
+2025-04-17 23:38:48,047 - INFO - Deletion of project files done (TS Evaluator)!
+2025-04-17 23:38:48,047 - INFO - Starting deletion of uploaded project files (TS Generator)...
+2025-04-17 23:38:50,188 - INFO - Deletion of project files done (TS Generator)!
+2025-04-17 23:48:28,078 - INFO - Starting upload of project files (TS Generator)...
+2025-04-17 23:48:30,323 - INFO - Upload of project files done (TS Generator)!
+2025-04-17 23:48:30,584 - INFO - Starting upload of project files (TS Evaluator)...
+2025-04-17 23:48:32,369 - INFO - Upload of project files done (TS Evaluator)!
+2025-04-17 23:48:32,370 - INFO - Sending initial test suite request...
+2025-04-17 23:48:39,058 - INFO - Received initial test suite!
+2025-04-17 23:48:39,060 - DEBUG - Saving suite to logs/suites/2025-04-17/tests_23_48_39.py
+2025-04-17 23:48:39,060 - INFO - Starting execution of the generated test suite...
+2025-04-17 23:48:39,166 - INFO - Execution of the generated test suite done!
+2025-04-17 23:48:39,166 - DEBUG - Test suite stdout:
+
+2025-04-17 23:48:39,166 - DEBUG - Test suite stderr:
+F.FFFFFFFEFFFEEFFEFFF
+======================================================================
+ERROR: test_operators_divide_equal (tests.LexerTest.test_operators_divide_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 120, in test_operators_divide_equal
+    expected_tokens = [Operator("/=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '/=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_minus_equal (tests.LexerTest.test_operators_minus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 136, in test_operators_minus_equal
+    expected_tokens = [Operator("-=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '-=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_multiply_equal (tests.LexerTest.test_operators_multiply_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 140, in test_operators_multiply_equal
+    expected_tokens = [Operator("*=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '*=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_plus_equal (tests.LexerTest.test_operators_plus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 152, in test_operators_plus_equal
+    expected_tokens = [Operator("+=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_comments (tests.LexerTest.test_comments)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 18, in test_comments
+    self._test_tokens("test_comments.lmu", [])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 7 != 0
+
+======================================================================
+FAIL: test_example (tests.LexerTest.test_example)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 45, in test_example
+    self._test_tokens("test_example.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 46 != 22
+
+======================================================================
+FAIL: test_identifier (tests.LexerTest.test_identifier)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 49, in test_identifier
+    self._test_tokens("test_identifier.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 1 != 3
+
+======================================================================
+FAIL: test_keyword (tests.LexerTest.test_keyword)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 70, in test_keyword
+    self._test_tokens("test_keyword.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 1 != 16
+
+======================================================================
+FAIL: test_literal (tests.LexerTest.test_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 74, in test_literal
+    self._test_tokens("test_literal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 1 != 3
+
+======================================================================
+FAIL: test_multiple (tests.LexerTest.test_multiple)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 87, in test_multiple
+    self._test_tokens("test_multiple.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 6 != 8
+
+======================================================================
+FAIL: test_multiple_lines (tests.LexerTest.test_multiple_lines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 100, in test_multiple_lines
+    self._test_tokens("test_multiple_lines.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 7 != 8
+
+======================================================================
+FAIL: test_operator (tests.LexerTest.test_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 117, in test_operator
+    self._test_tokens("test_operator.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 1 != 12
+
+======================================================================
+FAIL: test_operators_equal (tests.LexerTest.test_operators_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 125, in test_operators_equal
+    self._test_tokens("test_operators_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_operators_greater (tests.LexerTest.test_operators_greater)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 129, in test_operators_greater
+    self._test_tokens("test_operators_greater.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_operators_greater_equal (tests.LexerTest.test_operators_greater_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 133, in test_operators_greater_equal
+    self._test_tokens("test_operators_greater_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_operators_not (tests.LexerTest.test_operators_not)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 145, in test_operators_not
+    self._test_tokens("test_operators_not.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 2 != 1
+
+======================================================================
+FAIL: test_operators_not_equal (tests.LexerTest.test_operators_not_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 149, in test_operators_not_equal
+    self._test_tokens("test_operators_not_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_operators_smaller (tests.LexerTest.test_operators_smaller)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 157, in test_operators_smaller
+    self._test_tokens("test_operators_smaller.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_operators_smaller_equal (tests.LexerTest.test_operators_smaller_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 161, in test_operators_smaller_equal
+    self._test_tokens("test_operators_smaller_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 3 != 1
+
+======================================================================
+FAIL: test_separator (tests.LexerTest.test_separator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 175, in test_separator
+    self._test_tokens("test_separator.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 10, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 1 != 9
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.008s
+
+FAILED (failures=16, errors=4)
+
+2025-04-17 23:48:39,168 - INFO - Uploading test suite for analyse request...
+2025-04-17 23:48:39,996 - INFO - Upload of test suite for analyse request done!
+2025-04-17 23:48:39,996 - INFO - Sending test suite analyse request...
+2025-04-17 23:48:42,387 - INFO - Received response to test suite analyse request!
+2025-04-17 23:48:42,388 - DEBUG - Analyse Score: 40
+2025-04-17 23:48:42,388 - DEBUG - Analyse Feedback: The test suite has several critical errors and inconsistencies. The primary issue is that the `Operator` enum in `tokens.py` does not include operators like `/=`, `-=`, `*=`, and `+=`, leading to `ValueError` exceptions in the corresponding tests. Additionally, multiple tests are failing due to incorrect expected token counts, suggesting a mismatch between the expected and actual lexer output. The tests themselves are not robust, as they only check the length of the token list in most cases. A proper test would compare each token individually against the expected output. Furthermore, the test suite lacks negative test cases and edge cases (e.g. wrongly typed chars).
+2025-04-17 23:48:43,525 - INFO - +++ START OF ITERATION: 1 +++
+2025-04-17 23:48:43,525 - INFO - Sending feedback for generation of new test suite...
+2025-04-17 23:48:52,545 - INFO - Received updated test suite!
+2025-04-17 23:48:52,546 - DEBUG - Saving suite to logs/suites/2025-04-17/tests_23_48_52.py
+2025-04-17 23:48:52,547 - INFO - Starting execution of the generated test suite...
+2025-04-17 23:48:52,670 - INFO - Execution of the generated test suite done!
+2025-04-17 23:48:52,670 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: invalid_file.lmu
+
+2025-04-17 23:48:52,670 - DEBUG - Test suite stderr:
+F.FFEFFFFFFEFFFEEFFEFFFF
+======================================================================
+ERROR: test_invalid_input (tests.LexerTest.test_invalid_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 23, in __init__
+    with open(file_path) as file:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'invalid_file.lmu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 180, in test_invalid_input
+    Lexer("invalid_file.lmu")
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 27, in __init__
+    exit(-1)
+  File "<frozen _sitebuiltins>", line 26, in __call__
+SystemExit: -1
+
+======================================================================
+ERROR: test_operators_divide_equal (tests.LexerTest.test_operators_divide_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 121, in test_operators_divide_equal
+    expected_tokens = [Operator("/=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '/=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_minus_equal (tests.LexerTest.test_operators_minus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 137, in test_operators_minus_equal
+    expected_tokens = [Operator("-=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '-=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_multiply_equal (tests.LexerTest.test_operators_multiply_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 141, in test_operators_multiply_equal
+    expected_tokens = [Operator("*=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '*=' is not a valid Operator
+
+======================================================================
+ERROR: test_operators_plus_equal (tests.LexerTest.test_operators_plus_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 153, in test_operators_plus_equal
+    expected_tokens = [Operator("+=")]
+                       ^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_comments (tests.LexerTest.test_comments)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 19, in test_comments
+    self._test_tokens("test_comments.lmu", [])
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 7 != 0 : Token count mismatch for test_comments.lmu. Expected 0, got 7
+
+======================================================================
+FAIL: test_example (tests.LexerTest.test_example)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 46, in test_example
+    self._test_tokens("test_example.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 46 != 22 : Token count mismatch for test_example.lmu. Expected 22, got 46
+
+======================================================================
+FAIL: test_identifier (tests.LexerTest.test_identifier)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 50, in test_identifier
+    self._test_tokens("test_identifier.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 1 != 3 : Token count mismatch for test_identifier.lmu. Expected 3, got 1
+
+======================================================================
+FAIL: test_keyword (tests.LexerTest.test_keyword)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 71, in test_keyword
+    self._test_tokens("test_keyword.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 1 != 16 : Token count mismatch for test_keyword.lmu. Expected 16, got 1
+
+======================================================================
+FAIL: test_literal (tests.LexerTest.test_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 75, in test_literal
+    self._test_tokens("test_literal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 1 != 3 : Token count mismatch for test_literal.lmu. Expected 3, got 1
+
+======================================================================
+FAIL: test_mixed_input (tests.LexerTest.test_mixed_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 195, in test_mixed_input
+    self.assertEqual(len(tokens), len(expected_tokens))
+AssertionError: 6 != 4
+
+======================================================================
+FAIL: test_multiple (tests.LexerTest.test_multiple)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 88, in test_multiple
+    self._test_tokens("test_multiple.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 6 != 8 : Token count mismatch for test_multiple.lmu. Expected 8, got 6
+
+======================================================================
+FAIL: test_multiple_lines (tests.LexerTest.test_multiple_lines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 101, in test_multiple_lines
+    self._test_tokens("test_multiple_lines.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 7 != 8 : Token count mismatch for test_multiple_lines.lmu. Expected 8, got 7
+
+======================================================================
+FAIL: test_operator (tests.LexerTest.test_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 118, in test_operator
+    self._test_tokens("test_operator.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 1 != 12 : Token count mismatch for test_operator.lmu. Expected 12, got 1
+
+======================================================================
+FAIL: test_operators_equal (tests.LexerTest.test_operators_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 126, in test_operators_equal
+    self._test_tokens("test_operators_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_equal.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_operators_greater (tests.LexerTest.test_operators_greater)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 130, in test_operators_greater
+    self._test_tokens("test_operators_greater.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_operators_greater_equal (tests.LexerTest.test_operators_greater_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 134, in test_operators_greater_equal
+    self._test_tokens("test_operators_greater_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_greater_equal.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_operators_not (tests.LexerTest.test_operators_not)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 146, in test_operators_not
+    self._test_tokens("test_operators_not.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 2 != 1 : Token count mismatch for test_operators_not.lmu. Expected 1, got 2
+
+======================================================================
+FAIL: test_operators_not_equal (tests.LexerTest.test_operators_not_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 150, in test_operators_not_equal
+    self._test_tokens("test_operators_not_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_not_equal.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_operators_smaller (tests.LexerTest.test_operators_smaller)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 158, in test_operators_smaller
+    self._test_tokens("test_operators_smaller.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_operators_smaller_equal (tests.LexerTest.test_operators_smaller_equal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 162, in test_operators_smaller_equal
+    self._test_tokens("test_operators_smaller_equal.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 3 != 1 : Token count mismatch for test_operators_smaller_equal.lmu. Expected 1, got 3
+
+======================================================================
+FAIL: test_separator (tests.LexerTest.test_separator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 176, in test_separator
+    self._test_tokens("test_separator.lmu", expected_tokens)
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 11, in _test_tokens
+    self.assertEqual(len(tokens), len(expected_tokens), f"Token count mismatch for {file_path}. Expected {len(expected_tokens)}, got {len(tokens)}")
+AssertionError: 1 != 9 : Token count mismatch for test_separator.lmu. Expected 9, got 1
+
+======================================================================
+FAIL: test_unhandled_symbol (tests.LexerTest.test_unhandled_symbol)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 188, in test_unhandled_symbol
+    self.assertEqual(tokens, expected_tokens)
+AssertionError: Lists differ: [Identifier(value='@')] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+Identifier(value='@')
+
+- [Identifier(value='@')]
++ []
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.015s
+
+FAILED (failures=18, errors=5)
+
+2025-04-17 23:48:52,674 - INFO - Uploading test suite for analyse request...
+2025-04-17 23:48:54,243 - INFO - Upload of test suite for analyse request done!
+2025-04-17 23:48:54,243 - INFO - Sending test suite analyse request...
+2025-04-17 23:48:54,665 - INFO - Starting deletion of uploaded project files (TS Generator)...
+2025-04-17 23:48:54,676 - INFO - Starting deletion of uploaded project files (TS Evaluator)...
+2025-04-18 00:08:59,340 - INFO - Reading in project files (TS Generator)...
+2025-04-18 00:08:59,610 - INFO - Reading in project files (TS Evaluator)...
+2025-04-18 00:08:59,610 - INFO - Sending initial test suite request...
+2025-04-18 00:09:15,258 - INFO - Received initial test suite!
+2025-04-18 00:09:15,260 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_09_15.py
+2025-04-18 00:09:15,260 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:09:15,431 - INFO - Execution of the generated test suite done!
+2025-04-18 00:09:15,432 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:09:15,432 - DEBUG - Test suite stderr:
+E....F.EE.......
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 249, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_plus_equals_operator (tests.LexerTest.test_plus_equals_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 108, in test_plus_equals_operator
+    lexer = Lexer("plus_equals_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 88, in __init__
+    self._tokens.append(Operator(char + "="))
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 223, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.063s
+
+FAILED (failures=1, errors=3)
+
+2025-04-18 00:09:15,432 - INFO - Sending test suite analyse request...
+2025-04-18 00:09:16,698 - INFO - Received response to test suite analyse request!
+2025-04-18 00:09:16,698 - DEBUG - Analyse Score: 60
+2025-04-18 00:09:16,699 - DEBUG - Analyse Feedback: The test suite shows several issues. There are three errors related to index out of bounds and invalid operator definitions, indicating problems in the lexer's handling of edge cases and operator recognition. The test suite also contains a failing assertion in 'test_location_tracking', which points towards incorrect token counting or location tracking within the lexer. The tests create temporary files, which is good, but the lexer seems to have issues when a line ends with an operator or separator. The test suite could benefit from more edge case coverage, especially around newline characters and combined operators.
+2025-04-18 00:09:16,699 - INFO - +++ START OF ITERATION: 1 +++
+2025-04-18 00:09:16,699 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:09:35,458 - INFO - Received updated test suite!
+2025-04-18 00:09:35,459 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_09_35.py
+2025-04-18 00:09:35,460 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:09:35,594 - INFO - Execution of the generated test suite done!
+2025-04-18 00:09:35,594 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:09:35,594 - DEBUG - Test suite stderr:
+E.....E.F..E..E.......
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 270, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 249, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_plus_equals_operator (tests.LexerTest.test_plus_equals_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 108, in test_plus_equals_operator
+    lexer = Lexer("plus_equals_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 88, in __init__
+    self._tokens.append(Operator(char + "="))
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\AppData\Local\Programs\Python\Python312\Lib\enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: '+=' is not a valid Operator
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 223, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.040s
+
+FAILED (failures=1, errors=4)
+
+2025-04-18 00:09:35,595 - INFO - Sending test suite analyse request...
+2025-04-18 00:09:37,244 - INFO - Received response to test suite analyse request!
+2025-04-18 00:09:37,244 - DEBUG - Analyse Score: 65
+2025-04-18 00:09:37,244 - DEBUG - Analyse Feedback: The test suite has improved with more test cases, but errors persist. The 'IndexError' in 'test_assignment_operator', 'test_line_ends_with_operator' and 'test_newline_handling' suggests the lexer still struggles with end-of-line scenarios and single-character tokens. Also, the 'plus_equals_operator' test fails because '+=' is not a valid `Operator` enum value in `tokens.py`. The 'location_tracking' test still fails indicating a tokenization problem in more complex examples. Consideration for edge cases with newlines, spaces, and single characters at the end of lines is needed. The tests for combined operators and 'not equals' improve coverage.
+2025-04-18 00:09:37,244 - INFO - Test suite score of 65 achieved! Continuing iteration.
+2025-04-18 00:09:52,245 - INFO - +++ START OF ITERATION: 2 +++
+2025-04-18 00:09:52,245 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:10:14,942 - INFO - Received updated test suite!
+2025-04-18 00:10:14,943 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_10_14.py
+2025-04-18 00:10:14,943 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:10:15,085 - INFO - Execution of the generated test suite done!
+2025-04-18 00:10:15,085 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:10:15,085 - DEBUG - Test suite stderr:
+E....E.FE.F.FE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.039s
+
+FAILED (failures=3, errors=4)
+
+2025-04-18 00:10:15,090 - INFO - Sending test suite analyse request...
+2025-04-18 00:10:16,707 - INFO - Received response to test suite analyse request!
+2025-04-18 00:10:16,707 - DEBUG - Analyse Score: 70
+2025-04-18 00:10:16,707 - DEBUG - Analyse Feedback: The test suite continues to improve but still exhibits errors. The 'IndexError' persists in 'test_assignment_operator', 'test_equals_with_space', 'test_line_ends_with_operator' and 'test_newline_handling', indicating the lexer is still not robust in handling single character tokens and line endings. Additionally, location tracking is failing in tests like 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines', suggesting the line and column numbers are not being tracked correctly across newlines. More tests are required focusing on combined edge cases.
+2025-04-18 00:10:16,707 - INFO - Test suite score of 70 achieved! Continuing iteration.
+2025-04-18 00:10:31,708 - INFO - +++ START OF ITERATION: 3 +++
+2025-04-18 00:10:31,708 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:10:56,369 - INFO - Received updated test suite!
+2025-04-18 00:10:56,373 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_10_56.py
+2025-04-18 00:10:56,373 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:10:56,523 - INFO - Execution of the generated test suite done!
+2025-04-18 00:10:56,523 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:10:56,523 - DEBUG - Test suite stderr:
+E....E..F.E.F.FE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.053s
+
+FAILED (failures=3, errors=4)
+
+2025-04-18 00:10:56,537 - INFO - Sending test suite analyse request...
+2025-04-18 00:10:58,312 - INFO - Received response to test suite analyse request!
+2025-04-18 00:10:58,312 - DEBUG - Analyse Score: 72
+2025-04-18 00:10:58,312 - DEBUG - Analyse Feedback: The test suite is growing, but the core 'IndexError' issue persists in 'test_assignment_operator', 'test_equals_with_space', 'test_line_ends_with_operator', and 'test_newline_handling', indicating the lexer's primary loop needs better bounds checking. Location tracking continues to be problematic, failing tests like 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines', requiring a closer look at how line and column numbers are updated during tokenization, specifically when newlines are encountered. Tests such as 'test_identifier_equals_newline_literal' improve coverage, but the underlying issues need to be resolved.
+2025-04-18 00:10:58,312 - INFO - Test suite score of 72 achieved! Continuing iteration.
+2025-04-18 00:11:13,314 - INFO - +++ START OF ITERATION: 4 +++
+2025-04-18 00:11:13,314 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:11:39,099 - INFO - Received updated test suite!
+2025-04-18 00:11:39,099 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_11_39.py
+2025-04-18 00:11:39,099 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:11:39,318 - INFO - Execution of the generated test suite done!
+2025-04-18 00:11:39,318 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:11:39,318 - DEBUG - Test suite stderr:
+E.....E..F.E.F.FE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.062s
+
+FAILED (failures=3, errors=4)
+
+2025-04-18 00:11:39,323 - INFO - Sending test suite analyse request...
+2025-04-18 00:11:40,866 - INFO - Received response to test suite analyse request!
+2025-04-18 00:11:40,866 - DEBUG - Analyse Score: 75
+2025-04-18 00:11:40,866 - DEBUG - Analyse Feedback: Despite an expanding test suite, the 'IndexError' in 'test_assignment_operator', 'test_equals_with_space', 'test_line_ends_with_operator', and 'test_newline_handling' remains a critical issue, indicating a flaw in how the lexer handles end-of-line or single-character scenarios. Location tracking inaccuracies in 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines' suggest the newline handling within the lexer's location update logic is incorrect. The new test case 'consecutive_operators' improves the coverage a little bit. It is crucial to address these underlying problems to improve the lexer's reliability.
+2025-04-18 00:11:40,866 - INFO - Test suite score of 75 achieved! Continuing iteration.
+2025-04-18 00:11:55,867 - INFO - +++ START OF ITERATION: 5 +++
+2025-04-18 00:11:55,867 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:12:13,665 - INFO - Received updated test suite!
+2025-04-18 00:12:13,667 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_12_13.py
+2025-04-18 00:12:13,668 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:12:13,868 - INFO - Execution of the generated test suite done!
+2025-04-18 00:12:13,868 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:12:13,868 - DEBUG - Test suite stderr:
+E.....E..F..E.F.FEE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.074s
+
+FAILED (failures=3, errors=5)
+
+2025-04-18 00:12:13,871 - INFO - Sending test suite analyse request...

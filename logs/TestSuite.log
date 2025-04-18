@@ -1,0 +1,673 @@
+2025-04-18 00:12:15,404 - INFO - Received response to test suite analyse request!
+2025-04-18 00:12:15,407 - DEBUG - Analyse Score: 76
+2025-04-18 00:12:15,407 - DEBUG - Analyse Feedback: The test suite size is adequate, but the persistent 'IndexError' in 'test_assignment_operator', 'test_equals_with_space', 'test_line_ends_with_operator', 'test_newline_handling' and 'test_newline_then_equals' strongly indicates a systemic issue with boundary checking within the lexer's main loop during tokenization. Furthermore, discrepancies in location tracking, as evidenced by failures in 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines', need to be fixed to enhance the robustness and reliability of the lexer.
+2025-04-18 00:12:15,408 - INFO - Test suite score of 76 achieved! Continuing iteration.
+2025-04-18 00:12:30,408 - INFO - +++ START OF ITERATION: 6 +++
+2025-04-18 00:12:30,408 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:12:48,492 - INFO - Received updated test suite!
+2025-04-18 00:12:48,494 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_12_48.py
+2025-04-18 00:12:48,495 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:12:48,642 - INFO - Execution of the generated test suite done!
+2025-04-18 00:12:48,642 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:12:48,642 - DEBUG - Test suite stderr:
+E....E.E..F..E.F.FEE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_newline (tests.LexerTest.test_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 482, in test_equals_newline
+    lexer = Lexer("equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.052s
+
+FAILED (failures=3, errors=6)
+
+2025-04-18 00:12:48,643 - INFO - Sending test suite analyse request...
+2025-04-18 00:12:50,037 - INFO - Received response to test suite analyse request!
+2025-04-18 00:12:50,037 - DEBUG - Analyse Score: 77
+2025-04-18 00:12:50,037 - DEBUG - Analyse Feedback: The repeated 'IndexError' in 'test_assignment_operator', 'test_equals_newline', 'test_equals_with_space', 'test_line_ends_with_operator', 'test_newline_handling' and 'test_newline_then_equals' indicates a persistent error in how the lexer handles boundary conditions during tokenization. Location tracking is still inaccurate as seen by failures in 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines', pointing towards the lexer's inability to correctly update line and column numbers when newlines are encountered. More test coverage is needed for edge cases and combined special characters.
+2025-04-18 00:12:50,037 - INFO - Test suite score of 77 achieved! Continuing iteration.
+2025-04-18 00:13:05,039 - INFO - +++ START OF ITERATION: 7 +++
+2025-04-18 00:13:05,039 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:13:24,545 - INFO - Received updated test suite!
+2025-04-18 00:13:24,547 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_13_24.py
+2025-04-18 00:13:24,547 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:13:24,703 - INFO - Execution of the generated test suite done!
+2025-04-18 00:13:24,703 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:13:24,703 - DEBUG - Test suite stderr:
+E....E.E..EF..E.F.FEE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_newline (tests.LexerTest.test_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 482, in test_equals_newline
+    lexer = Lexer("equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_identifier_newline_equals (tests.LexerTest.test_identifier_newline_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 494, in test_identifier_newline_equals
+    lexer = Lexer("identifier_newline_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.056s
+
+FAILED (failures=3, errors=7)
+
+2025-04-18 00:13:24,707 - INFO - Sending test suite analyse request...
+2025-04-18 00:13:26,422 - INFO - Received response to test suite analyse request!
+2025-04-18 00:13:26,422 - DEBUG - Analyse Score: 78
+2025-04-18 00:13:26,423 - DEBUG - Analyse Feedback: The test suite contains a reasonable number of test cases, but the lexer continues to fail on basic scenarios. The 'IndexError' persists across multiple tests including 'test_assignment_operator', 'test_equals_newline', 'test_equals_with_space', 'test_line_ends_with_operator', 'test_newline_handling', 'test_newline_then_equals', and 'test_identifier_newline_equals'. This indicates a consistent error in how single-character tokens or end-of-line states are handled. Furthermore, the location tracking remains incorrect in 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines', highlighting a flaw in managing line and column numbers during tokenization. The addition of 'test_identifier_newline_equals' helps but the location is still off.
+2025-04-18 00:13:26,423 - INFO - Test suite score of 78 achieved! Continuing iteration.
+2025-04-18 00:13:41,424 - INFO - +++ START OF ITERATION: 8 +++
+2025-04-18 00:13:41,424 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:14:01,411 - INFO - Received updated test suite!
+2025-04-18 00:14:01,413 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_14_01.py
+2025-04-18 00:14:01,414 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:14:01,590 - INFO - Execution of the generated test suite done!
+2025-04-18 00:14:01,590 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:14:01,590 - DEBUG - Test suite stderr:
+E....E.E..EF..E.F.FEEE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_newline (tests.LexerTest.test_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 482, in test_equals_newline
+    lexer = Lexer("equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_identifier_newline_equals (tests.LexerTest.test_identifier_newline_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 494, in test_identifier_newline_equals
+    lexer = Lexer("identifier_newline_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_equals_newline (tests.LexerTest.test_newline_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 509, in test_newline_equals_newline
+    lexer = Lexer("newline_equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.072s
+
+FAILED (failures=3, errors=8)
+
+2025-04-18 00:14:01,595 - INFO - Sending test suite analyse request...
+2025-04-18 00:14:03,301 - INFO - Received response to test suite analyse request!
+2025-04-18 00:14:03,301 - DEBUG - Analyse Score: 79
+2025-04-18 00:14:03,301 - DEBUG - Analyse Feedback: The test suite has good coverage, but critical `IndexError` exceptions persist in 'test_assignment_operator', 'test_equals_newline', 'test_equals_with_space', 'test_identifier_newline_equals', 'test_line_ends_with_operator', 'test_newline_equals_newline', 'test_newline_handling', and 'test_newline_then_equals', highlighting a failure to handle single-character tokens and boundary conditions. Furthermore, location tracking failures remain in 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines' indicating an issue updating line and column numbers during tokenization. There might be something wrong in how the `_curr_column` is handled at the end of a line.
+2025-04-18 00:14:03,301 - INFO - Test suite score of 79 achieved! Continuing iteration.
+2025-04-18 00:14:18,302 - INFO - +++ START OF ITERATION: 9 +++
+2025-04-18 00:14:18,302 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:14:40,515 - INFO - Received updated test suite!
+2025-04-18 00:14:40,517 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_14_40.py
+2025-04-18 00:14:40,517 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:14:40,675 - INFO - Execution of the generated test suite done!
+2025-04-18 00:14:40,675 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:14:40,675 - DEBUG - Test suite stderr:
+E....E.E...EF..E.F.FEEE...........
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_newline (tests.LexerTest.test_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 482, in test_equals_newline
+    lexer = Lexer("equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_identifier_newline_equals (tests.LexerTest.test_identifier_newline_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 494, in test_identifier_newline_equals
+    lexer = Lexer("identifier_newline_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_equals_newline (tests.LexerTest.test_newline_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 509, in test_newline_equals_newline
+    lexer = Lexer("newline_equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.059s
+
+FAILED (failures=3, errors=8)
+
+2025-04-18 00:14:40,680 - INFO - Sending test suite analyse request...
+2025-04-18 00:14:42,375 - INFO - Received response to test suite analyse request!
+2025-04-18 00:14:42,375 - DEBUG - Analyse Score: 80
+2025-04-18 00:14:42,375 - DEBUG - Analyse Feedback: The test suite has further expanded, but the 'IndexError' issue during lexer initialization in 'test_assignment_operator', 'test_equals_newline', 'test_equals_with_space', 'test_identifier_newline_equals', 'test_line_ends_with_operator', 'test_newline_equals_newline', 'test_newline_handling', and 'test_newline_then_equals' still occurs. Location tracking is still problematic, thus tests 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines' fail. Pay attention on tokenizing 'x=y' as a single identifier versus identifier-operator-identifier.
+2025-04-18 00:14:42,375 - INFO - Test suite score of 80 achieved! Continuing iteration.
+2025-04-18 00:14:57,376 - INFO - +++ START OF ITERATION: 10 +++
+2025-04-18 00:14:57,376 - INFO - Sending feedback for generation of new test suite...
+2025-04-18 00:15:17,092 - INFO - Received updated test suite!
+2025-04-18 00:15:17,103 - DEBUG - Saving suite to logs/suites/2025-04-18/tests_00_15_17.py
+2025-04-18 00:15:17,104 - INFO - Starting execution of the generated test suite...
+2025-04-18 00:15:17,277 - INFO - Execution of the generated test suite done!
+2025-04-18 00:15:17,277 - DEBUG - Test suite stdout:
+Error occurred during reading file at location: nonexistent_file.lmu
+
+2025-04-18 00:15:17,278 - DEBUG - Test suite stderr:
+E....E.E...EF..E.F.FEEE............
+======================================================================
+ERROR: test_assignment_operator (tests.LexerTest.test_assignment_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 84, in test_assignment_operator
+    lexer = Lexer("assignment_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_newline (tests.LexerTest.test_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 482, in test_equals_newline
+    lexer = Lexer("equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_equals_with_space (tests.LexerTest.test_equals_with_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 392, in test_equals_with_space
+    lexer = Lexer("equals_with_space.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_identifier_newline_equals (tests.LexerTest.test_identifier_newline_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 494, in test_identifier_newline_equals
+    lexer = Lexer("identifier_newline_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_line_ends_with_operator (tests.LexerTest.test_line_ends_with_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 255, in test_line_ends_with_operator
+    lexer = Lexer("line_ends_operator.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_equals_newline (tests.LexerTest.test_newline_equals_newline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 509, in test_newline_equals_newline
+    lexer = Lexer("newline_equals_newline.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_handling (tests.LexerTest.test_newline_handling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 237, in test_newline_handling
+    lexer = Lexer("newline_test.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+ERROR: test_newline_then_equals (tests.LexerTest.test_newline_then_equals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 470, in test_newline_then_equals
+    lexer = Lexer("newline_then_equals.lmu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\src\lexer.py", line 72, in __init__
+    if line[self._curr_column + 1] == "=":
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+
+======================================================================
+FAIL: test_identifier_newline_operator (tests.LexerTest.test_identifier_newline_operator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 366, in test_identifier_newline_operator
+    self.assertEqual(locations[0], TokenLocation(0, 0, 0))
+AssertionError: TokenLocation(line=1, start=0, end=0) != TokenLocation(line=0, start=0, end=0)
+
+======================================================================
+FAIL: test_location_tracking (tests.LexerTest.test_location_tracking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 211, in test_location_tracking
+    self.assertEqual(len(tokens), 4)
+AssertionError: 5 != 4
+
+======================================================================
+FAIL: test_multiple_newlines (tests.LexerTest.test_multiple_newlines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\moritz\PycharmProjects\TestSuiteGen\project\tests.py", line 334, in test_multiple_newlines
+    self.assertEqual(locations[2], TokenLocation(2, 4, 5))
+AssertionError: TokenLocation(line=3, start=4, end=5) != TokenLocation(line=2, start=4, end=5)
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.063s
+
+FAILED (failures=3, errors=8)
+
+2025-04-18 00:15:17,285 - INFO - Sending test suite analyse request...
+2025-04-18 00:15:19,562 - INFO - Received response to test suite analyse request!
+2025-04-18 00:15:19,562 - DEBUG - Analyse Score: 81
+2025-04-18 00:15:19,562 - DEBUG - Analyse Feedback: The test suite demonstrates increased coverage, yet the lexer still exhibits common errors. The persistent 'IndexError' in 'test_assignment_operator', 'test_equals_newline', 'test_equals_with_space', 'test_identifier_newline_equals', 'test_line_ends_with_operator', 'test_newline_equals_newline', 'test_newline_handling', and 'test_newline_then_equals' points to an ongoing issue with handling boundary and single-character conditions. Location tracking remains flawed in tests 'test_identifier_newline_operator', 'test_location_tracking', and 'test_multiple_newlines'. Special attention must be paid to these two issues.
+2025-04-18 00:15:19,563 - INFO - Test suite score of 81 achieved! Continuing iteration.
